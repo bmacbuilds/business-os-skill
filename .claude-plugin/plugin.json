@@ -1,0 +1,14 @@
+{
+  "name": "builder",
+  "description": "Builds AI agents for a real business, as Claude skills: a business brain, approval gates, an agent card and a schedule, tested on the business's own example and ready to hand over.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brian MacDonald",
+    "url": "https://github.com/bmacbuilds"
+  },
+  "homepage": "https://github.com/bmacbuilds/builder-skill",
+  "repository": "https://github.com/bmacbuilds/builder-skill",
+  "license": "MIT",
+  "keywords": ["claude-code", "claude-skills"],
+  "skills": "./"
+}

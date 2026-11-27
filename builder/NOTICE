@@ -1,0 +1,16 @@
+Builder adapts parts of two open-source works, each under the Apache License, Version 2.0. The licence's full text
+is in LICENSE-APACHE-2.0, in the builder folder.
+
+Copyright 2026 Anthropic, PBC.
+
+1. build-agent, from Anthropic's Small Business plugin (commit 5e504ae), in references/build-agent/. Changed for
+   Builder: build-agent.md (its SKILL.md, renamed) and skill_authoring.md no longer register a skill with that
+   plugin's router, which Builder does not have. Each says so in its first line. capture.md and gotchas.md are
+   unchanged.
+
+2. skill-creator, from Anthropic's skills repository (commit e4bb5d9), in references/skill-creator/. Unchanged, except
+   that its SKILL.md is renamed skill-creator.md, so the builder folder holds one SKILL.md and Builder does not stand in
+   for the skill-creator your AI app may already have. Its licence file is the same licence, given once in
+   LICENSE-APACHE-2.0.
+
+Builder's own files (its SKILL.md, its two templates and its README) are under the MIT License in LICENSE.

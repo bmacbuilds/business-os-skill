@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "builder-skill",
+  "description": "Builder by Brian MacDonald",
+  "owner": {
+    "name": "Brian MacDonald",
+    "url": "https://github.com/bmacbuilds"
+  },
+  "plugins": [
+    {
+      "name": "builder",
+      "description": "Builds AI agents for a real business, as Claude skills: a business brain, approval gates, an agent card and a schedule, tested on the business's own example and ready to hand over.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/bmacbuilds/builder-skill"
+    }
+  ]
+}
