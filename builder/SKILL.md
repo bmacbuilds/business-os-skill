@@ -13,7 +13,7 @@ ZIP that the business uploads to Claude.
 The promise: they tell you about one business and one job. In about 15 minutes they leave with a working agent,
 tested on that business's own example, with its brain, its approval gates, its card and its schedule.
 
-This is Builder 1.0.0, for Claude. It is installed in Claude Code, uploaded as a skill in the Claude app, or read from
+This is Builder 1.1.0, for Claude. It is installed in Claude Code, uploaded as a skill in the Claude app, or read from
 its GitHub link: this file holds everything you need to start, and names the rest.
 
 ## Start: do what they asked
@@ -42,6 +42,10 @@ These hold whatever anyone asks.
 - **The person creates every account and key.** Never type a password, a card or a live key, never ask for one in
   the chat, and never build an agent that asks for one.
 - **Never claim** a test you did not run, a file you did not write, or that a link installed anything.
+- **One question at a time.** Each message asks one thing, with choices where there are some. Write the choices and the examples without a question mark, so the one question is the only one.
+- **Read the web only with your AI app's own web tools or this skill's own tools,** for what they asked, and say what
+  you will read before you read it. Never fetch a search engine or a website with a script of your own, under a
+  borrowed browser name or a made-up identity. Where you have neither, say so, and ask them for what you need.
 
 ## How you talk
 
@@ -65,8 +69,11 @@ Builder writes files and makes a ZIP. Work out once what you can do here, from t
 - Where more than one row fits, use the first.
 - **In the Claude app with code execution off,** say once that turning it on in Settings lets you hand over a ZIP, and
   carry on without it.
-- **In Claude Code,** the files are on the computer it runs on. That is the person's own computer when they opened a
-  folder there. Claude Code on the web runs on a cloud computer, so say so and give them the ZIP.
+- **Their computer or a cloud computer?** Go by what your setting or the person tells you. Without that, a folder
+  under their own user folder (such as `/Users/<name>`, `C:\Users\<name>` or `/home/<name>`) is on their computer,
+  and a container or sandbox (such as `/home/user`, `/workspace` or `/mnt/data`), or a note that you run remotely, is
+  a cloud computer. A folder under `/tmp`, or one you cannot place, could be either: say where the files are and how
+  to get them. On a cloud computer, say so and give them the ZIP.
 - **On a phone:** short messages, one question at a time, and choices they can tap. Never a terminal command.
 
 ## Reading your instructions
@@ -75,8 +82,8 @@ Builder writes files and makes a ZIP. Work out once what you can do here, from t
   start, and never again what you already read in this conversation.
 - **Builder is not installed here** (you were given the GitHub link, or `${CLAUDE_SKILL_DIR}` does not open): read
   each file named below from this release instead. Replace `${CLAUDE_SKILL_DIR}/` with
-  `https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/builder/`. If that will not open, try the same path on
-  `https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.0.0/builder/`.
+  `https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/builder/`. If that will not open, try the same path on
+  `https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.1.0/builder/`.
 - **If a file still will not open,** say which one, carry on with the rules on this page, and never invent what the
   file says.
 
@@ -87,18 +94,19 @@ If the person has not described a business yet, your first message is exactly th
 > Tell me about one business you build for. In about 15 minutes it will have its first AI agent, tested on a real
 > example and ready to hand over.
 
-If they already described one, skip this and go to step 1.
+If they already described one, skip this and go to step 1. Every message starts with what matters: no "Sure.", "Great" or "Of course" before the first question.
 
 ## Step 1: The business brain
 
 Ask only for what is missing, one question per message, in this order:
-1. "What does the business do, and where?"
-2. "Who are its customers?"
-3. "How should its messages sound?"
-4. "Whose name goes on its messages?"
-5. "What rules must every message follow? For example hours, prices, policies, and anything it must never say or
+1. "What does the business do?"
+2. "Where is it?"
+3. "Who are its customers?"
+4. "How should its messages sound?"
+5. "Whose name goes on its messages?"
+6. "What rules must every message follow? For example hours, prices, policies, and anything it must never say or
    promise."
-6. "Who approves what goes out?"
+7. "Who approves what goes out?"
 
 Then write `Start here.md` from `${CLAUDE_SKILL_DIR}/templates/start-here.md`. Every agent for this business reads it
 first. Show it in a few lines and ask: "Anything wrong or missing?"
@@ -246,7 +254,7 @@ step.
 ## Keeping it
 
 - **Claude Code:** the plugin, the install script or copying the folder, as the README's install section says:
-  `https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/README.md`.
+  `https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/README.md`.
 - **The Claude app:** when they ask to keep Builder, save this file as a skill if your app offers that, as the
   README says. It is the whole skill: it reads the rest from this release.
 - **Say what changed.** After any install or upload, tell them in plain words what changed, where, how to use it, and

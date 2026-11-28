@@ -14,7 +14,7 @@ set -euo pipefail
 
 NAME="builder"
 FALLBACK="bmac-builder"
-RELEASE_URL="${BUILDER_RELEASE_URL:-https://github.com/bmacbuilds/builder-skill/archive/refs/tags/v1.0.0.tar.gz}"
+RELEASE_URL="${BUILDER_RELEASE_URL:-https://github.com/bmacbuilds/builder-skill/archive/refs/tags/v1.1.0.tar.gz}"
 MARKER=".builder-install"
 COMMANDS=""   # written by scripts/sync.py from skill.json
 FROM="" UPDATE=0 REPLACE=0 ASSUME_YES=0

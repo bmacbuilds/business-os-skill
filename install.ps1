@@ -19,7 +19,7 @@ param(
 $ErrorActionPreference = "Stop"
 $Fallback = "bmac-builder"
 $ReleaseUrl = if ($env:BUILDER_RELEASE_URL) { $env:BUILDER_RELEASE_URL } else {
-  "https://github.com/bmacbuilds/builder-skill/archive/refs/tags/v1.0.0.zip" }
+  "https://github.com/bmacbuilds/builder-skill/archive/refs/tags/v1.1.0.zip" }
 $Marker = ".builder-install"
 $Commands = @()   # written by scripts/sync.py from skill.json
 

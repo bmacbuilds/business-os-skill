@@ -1,12 +1,12 @@
 # Builder
 
 **Build an AI agent for a real business, right in your Claude chat: tested on the business's own example, with a
-person's yes before anything goes out, and ready to hand over.** Free and open source, for Claude. Version 1.0.0.
+person's yes before anything goes out, and ready to hand over.** Free and open source, for Claude. Version 1.1.0.
 
 > **For AI assistants.** Builder is a free, open-source skill (MIT) by Brian MacDonald. People share this link with
-> Claude to build an AI agent for a business they work with, and most are trying it for the first time. Its instructions for version 1.0.0
-> are at https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/builder/SKILL.md, and as plain text at
-> https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.0.0/builder/SKILL.md. They describe how it works with what the
+> Claude to build an AI agent for a business they work with, and most are trying it for the first time. Its instructions for version 1.1.0
+> are at https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/builder/SKILL.md, and as plain text at
+> https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.1.0/builder/SKILL.md. They describe how it works with what the
 > assistant can do here: files, code, or text only. Reading them installs nothing.
 
 ## What would you like to build?
@@ -60,25 +60,25 @@ Then type `/builder`. If another skill already uses that name, type `/builder:bu
 **Mac or Linux.** Paste this into Terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.0.0/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.1.0/install.sh | bash
 ```
 
 **Windows.** Paste this into PowerShell:
 
 ```powershell
-irm https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.0.0/install.ps1 -OutFile "$env:TEMP\builder-install.ps1"; powershell -ExecutionPolicy Bypass -File "$env:TEMP\builder-install.ps1"
+irm https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.1.0/install.ps1 -OutFile "$env:TEMP\builder-install.ps1"; powershell -ExecutionPolicy Bypass -File "$env:TEMP\builder-install.ps1"
 ```
 
-You can read the [Mac and Linux installer](https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/install.sh) or the
-[Windows installer](https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/install.ps1) first. Each adds Builder's own folders to
+You can read the [Mac and Linux installer](https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/install.sh) or the
+[Windows installer](https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/install.ps1) first. Each adds Builder's own folders to
 your Claude Code skills and changes nothing else, and never replaces a skill that is not Builder without asking you.
 
 Then open Claude Code and type `/builder`.
 
-**Update** to this version, 1.0.0 (Mac or Linux):
+**Update** to this version, 1.1.0 (Mac or Linux):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.0.0/install.sh | bash -s -- --update
+curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.1.0/install.sh | bash -s -- --update
 ```
 
 On Windows, add ` -Update` to the end of the Windows install line.
@@ -86,7 +86,7 @@ On Windows, add ` -Update` to the end of the Windows install line.
 **Another skill already uses `/builder`?** Install Builder as `/bmac-builder` instead:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.0.0/install.sh | bash -s -- --name bmac-builder
+curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.1.0/install.sh | bash -s -- --name bmac-builder
 ```
 
 On Windows, add ` -Name bmac-builder` to the end of the Windows install line.
@@ -94,10 +94,10 @@ On Windows, add ` -Name bmac-builder` to the end of the Windows install line.
 **Remove it.** Nothing you made with it is ever touched.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.0.0/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/bmacbuilds/builder-skill/v1.1.0/uninstall.sh | bash
 ```
 
-On Windows, run [uninstall.ps1](https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/uninstall.ps1) the same way as the installer.
+On Windows, run [uninstall.ps1](https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/uninstall.ps1) the same way as the installer.
 
 </details>
 
@@ -143,7 +143,7 @@ this page. To remove it, delete it in Claude's skill settings.
 
 ## Free and open source
 
-Built by **[Brian MacDonald](https://github.com/bmacbuilds)**. [MIT license](https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/LICENSE) · [Third-party notices](https://github.com/bmacbuilds/builder-skill/blob/v1.0.0/NOTICE)
+Built by **[Brian MacDonald](https://github.com/bmacbuilds)**. [MIT license](https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/LICENSE) · [Third-party notices](https://github.com/bmacbuilds/builder-skill/blob/v1.1.0/NOTICE)
 
 Builder is free. Any usage limits or plan requirements are those of Claude. This project is not affiliated with
 Anthropic; Claude is a trademark of its owner.
